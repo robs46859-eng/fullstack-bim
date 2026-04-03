@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 const API = import.meta.env.DEV ? 'http://localhost:3000' : '';
 
