@@ -11,7 +11,7 @@ REGION="us-east-1"
 APP_NAME="stelarbim"
 DB_IDENTIFIER="stelarbim-db"
 GITHUB_REPO="https://github.com/robs46859-eng/fullstack-bim"
-GEMINI_KEY="AIzaSyDeH05Q6X7jMPbWkws7f4oBcm-HT-WeBtU"
+GEMINI_KEY="${GEMINI_API_KEY:-ROTATE_THIS_KEY}"  # Key removed — set via env var only
 
 echo ""
 echo "============================================================"

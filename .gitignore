@@ -38,3 +38,7 @@ build/
 *.db
 *.sqlite
 *.sqlite3
+
+# Deploy scripts (contain credentials)
+deploy-aws.command
+.deploy-env
