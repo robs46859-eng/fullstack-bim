@@ -6,4 +6,4 @@ COPY . .
 RUN npm run build
 EXPOSE 3000
 ENV NODE_ENV=production
-CMD ["npx", "tsx", "server/index.ts"]
+CMD ["node", "--import", "tsx/esm", "server/index.ts"]
