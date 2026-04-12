@@ -6,6 +6,7 @@ import projectsRouter from './routes/projects.js';
 import tasksRouter from './routes/tasks.js';
 import runsRouter from './routes/runs.js';
 import approvalsRouter from './routes/approvals.js';
+import modelsRouter from './routes/models.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -18,6 +19,7 @@ app.use('/api/projects', projectsRouter);
 app.use('/api/tasks', tasksRouter);
 app.use('/api/runs', runsRouter);
 app.use('/api/approvals', approvalsRouter);
+app.use('/api/models', modelsRouter);
 
 // Health check
 app.get('/api/health', (_, res) => res.json({ status: 'ok', service: 'StelarBIM' }));
